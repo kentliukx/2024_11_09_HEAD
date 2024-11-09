@@ -21,7 +21,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/User/Inc"
   "D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Inc"
   "D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Inc"
   "D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"

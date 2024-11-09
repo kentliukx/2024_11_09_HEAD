@@ -23,7 +23,6 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -47,8 +46,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t buffer[20];
-uint16_t rx_message[6];
+uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20];
+uint16_t DBUS_message[6];
+CAN_RxHeaderTypeDef rx_header;
+CAN_TxHeaderTypeDef tx_header;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

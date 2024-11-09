@@ -8,9 +8,9 @@
 extern "C" {
 #endif
 
-void remotecontrol_handle();
+void remotecontrol_callback();
 
-void remotecontrol_calc();
+void remotecontrol_handle();
 
 
 #ifdef __cplusplus
