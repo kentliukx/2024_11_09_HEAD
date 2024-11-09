@@ -9,7 +9,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     if (htim->Instance == TIM1)
     {
         remotecontrol_calc();
-        Motor::speed_calc();
-        Motor::package_Send();
+        // motor1::speed_calc();
+        // motor1::package_Send();
     }
 }

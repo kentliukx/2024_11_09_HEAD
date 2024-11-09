@@ -48,6 +48,7 @@
 
 /* USER CODE BEGIN PV */
 uint8_t buffer[20];
+uint16_t rx_message[6];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
