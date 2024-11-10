@@ -7,8 +7,9 @@
 
 #include <sys/_stdint.h>
 
-class M3508_Motor {
+class Motor {
     float ratio_;// 电机减速比
+    float angle_;
     struct {
         int r;
         float angle;
@@ -20,13 +21,22 @@ class M3508_Motor {
     float rotate_speed_;// dps 反馈转子转速
     float current_;
     float temp;
+    float max_angle_;
+    float min_angle_;
 public:
     uint8_t CANID;
-    M3508_Motor();
     void canRxMsgCallback(uint8_t rx_data[8]);
-    void store_angle_new(float delta_angle_);
+    void store_angle_new();
+    void init(float ratio,float max_angle,float min_angle);
+
 };
 
+void motor_init();
+
 void motor_handle();
+
+void motor_calc();
+
+void motor_package_send();
 
 #endif //MOTOR_H

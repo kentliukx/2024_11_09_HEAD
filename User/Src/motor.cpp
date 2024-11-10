@@ -6,35 +6,76 @@
 
 extern uint8_t CAN_rx_message[20], CAN_tx_message[20];
 extern CAN_RxHeaderTypeDef rx_header, tx_header;
-M3508_Motor motor[1];
-void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)
+extern uint8_t num_of_motors;
+
+Motor motor[1];
+
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)//中断回调
 {
     HAL_CAN_GetRxMessage(&hcan1,CAN_RX_FIFO0,&rx_header,CAN_rx_message);
+    motor_handle();
 }
+
+
 
 void motor_handle()
 {
-    if(rx_header.StdId==motor[0].CANID)
-        motor[0].canRxMsgCallback(CAN_rx_message);
+    for(int i=0;i<num_of_motors;i++)
+        if(rx_header.StdId==motor[i].CANID)
+        {
+            motor[i].canRxMsgCallback(CAN_rx_message);
+            break;
+        }
+}
+
+void motor_calc()
+{
+
 }
 
 
-void M3508_Motor::canRxMsgCallback(uint8_t CAN_rx_message[8])
-{
-    last_ecd_angle_=ecd_angle_;//更新上次编码器角度
 
-    ecd_angle_=(float)CAN_rx_message[0]*256+(float)CAN_rx_message[1];
-    rotate_speed_=CAN_rx_message[2]*256+CAN_rx_message[3];
-    current_=CAN_rx_message[4]*256+CAN_rx_message[5];
-    temp=CAN_rx_message[6];//get数据
+
+
+
+
+
+
+
+
+void motor_init()
+{
+    motor[0].init(1,1,100);
+}
+
+void Motor::init(float ratio,float max_angle,float min_angle)
+{
+    ratio_=ratio;
+    max_angle_=max_angle;
+    min_angle_=min_angle;
+
+    last_ecd_angle_=0;
+    angle_=0;
+    angle_new.angle=0;
+    angle_new.r=0;
+}
+
+void Motor::canRxMsgCallback(uint8_t rx_message[8])
+{
+    last_ecd_angle_=ecd_angle_;
+
+    ecd_angle_=360.0/8191*(rx_message[0]*256+rx_message[1]);
+    rotate_speed_=rx_message[2]*256+rx_message[3];
+    current_=rx_message[4]*256+rx_message[5];
+    temp=rx_message[6];
 
     if(ecd_angle_>last_ecd_angle_-180) delta_ecd_angle_=ecd_angle_-last_ecd_angle_;
-    else delta_ecd_angle_=ecd_angle_-last_ecd_angle_+360;//获取角度增量or减量,此时已经转过一整圈
+    else delta_ecd_angle_=ecd_angle_-last_ecd_angle_+360;
     delta_angle_=delta_ecd_angle_*ratio_;
-    store_angle_new(delta_angle_);//保存电机累计转过角度
+    store_angle_new();//保存电机输出端累计转过角度
 }
 
-void M3508_Motor::store_angle_new(float delta_angle_){
+void Motor::store_angle_new(){
     angle_new.angle+=delta_angle_;
     if(angle_new.angle>=360){
         angle_new.angle-=360;
@@ -44,12 +85,4 @@ void M3508_Motor::store_angle_new(float delta_angle_){
         angle_new.angle+=360;
         angle_new.r-=1;
     }
-}
-
-M3508_Motor::M3508_Motor(){
-    ratio_=(float)3591/187;
-    angle_new.r=0;
-    angle_new.angle=0;
-    last_ecd_angle_=0;
-    ecd_angle_=0;
 }

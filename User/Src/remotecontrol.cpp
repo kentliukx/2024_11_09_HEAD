@@ -13,6 +13,7 @@ void remotecontrol_callback()//中断回调
     {
         __HAL_UART_CLEAR_IDLEFLAG(&huart3);
         HAL_UART_DMAStop(&huart3);
+        remotecontrol_handle();
         HAL_UART_Receive_DMA(&huart3,DBUS_rx_message,20);
     }
 }

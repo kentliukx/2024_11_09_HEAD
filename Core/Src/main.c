@@ -25,7 +25,7 @@
 #include "gpio.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "../../user/Inc/motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +46,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20];
+uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20],num_of_motors;
 uint16_t DBUS_message[6];
 CAN_RxHeaderTypeDef rx_header;
 CAN_TxHeaderTypeDef tx_header;
@@ -98,6 +98,7 @@ int main(void)
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim1);
+  motor_init();
 
   CAN_FilterTypeDef FilterConfig={0,0,0,0,0,0,0,1,1,0};
   HAL_CAN_ConfigFilter(&hcan1,&FilterConfig);
@@ -105,7 +106,7 @@ int main(void)
   HAL_CAN_ActivateNotification(&hcan1,CAN_IT_RX_FIFO0_MSG_PENDING);
 
   __HAL_UART_ENABLE_IT(&huart3,UART_IT_IDLE);
-  HAL_UART_Receive_DMA(&huart3,buffer,20);
+  HAL_UART_Receive_DMA(&huart3,DBUS_rx_message,20);
   /* USER CODE END 2 */
 
   /* Infinite loop */

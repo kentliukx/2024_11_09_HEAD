@@ -1,15 +1,16 @@
 //
 // Created by kentl on 24-11-9.
 //
-#include "tim.h"
+#include "../Inc/callback.h"
 #include "../Inc/motor.h"
 #include "../Inc/remotecontrol.h"
+#include "tim.h"
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)//开始干活
 {
     if (htim->Instance == TIM1)
     {
-        remotecontrol_handle();
-        motor_handle();
+        motor_calc();
+        motor_package_send();
     }
 }
