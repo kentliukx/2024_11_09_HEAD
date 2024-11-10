@@ -33,6 +33,10 @@ void motor_calc()
 
 }
 
+void motor_package_send()
+{
+
+}
 
 
 
@@ -45,11 +49,12 @@ void motor_calc()
 
 void motor_init()
 {
-    motor[0].init(1,1,100);
+    motor[0].init(0x000,1,1,100);
 }
 
-void Motor::init(float ratio,float max_angle,float min_angle)
+void Motor::init(uint8_t canid,float ratio,float max_angle,float min_angle)
 {
+    CANID=canid;
     ratio_=ratio;
     max_angle_=max_angle;
     min_angle_=min_angle;

@@ -27,7 +27,7 @@ public:
     uint8_t CANID;
     void canRxMsgCallback(uint8_t rx_data[8]);
     void store_angle_new();
-    void init(float ratio,float max_angle,float min_angle);
+    void init(uint8_t canid,float ratio,float max_angle,float min_angle);
 
 };
 
