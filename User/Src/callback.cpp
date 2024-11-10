@@ -11,6 +11,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)//开始干活
     if (htim->Instance == TIM1)
     {
         motor_calc();
-        //motor_package_send();
+        motor_package_send();
     }
 }

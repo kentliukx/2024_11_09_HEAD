@@ -37,20 +37,24 @@ void motor_handle()
 
 void motor_calc()
 {
-    int16_t temp;
-    temp=motor_pid[0].calc((float)(DBUS_message[0]-364)/1320,(float)(motor[0].angle_-motor[0].min_angle_)/(motor[0].max_angle_-motor[0].min_angle_));
-    CAN_tx_message[0]=temp>>8;
-    CAN_tx_message[1]=temp&0xff;
+    int16_t tgt_current;
+    float ref=((float)DBUS_message[0]-364)/1320*(motor[0].max_angle_-motor[0].min_angle_)+motor[0].min_angle_;
+    float fdb=motor[0].angle_;
+    tgt_current=motor_pid[0].pidcalc(ref,fdb);
+    CAN_tx_message[6]=tgt_current>>8;
+    CAN_tx_message[7]=tgt_current&0xff;
 }
 
 void motor_package_send()
 {
-    tx_header.StdId=0x1FE;
+    tx_header.StdId=0x1FF;
     tx_header.IDE=CAN_ID_STD;
     tx_header.RTR=CAN_RTR_DATA;
     tx_header.DLC=8;
-    //此处发电流大小
-    HAL_CAN_AddTxMessage(&hcan1,&tx_header,CAN_tx_message, &sent_in_mailbox_num);
+
+    if(DBUS_message[5]==2)//stop
+        for(int i=0;i<8;i++) CAN_tx_message[i]=0;
+    HAL_CAN_AddTxMessage(&hcan1,&tx_header,CAN_tx_message,&sent_in_mailbox_num);
 }
 
 
@@ -64,7 +68,7 @@ void motor_package_send()
 
 void motor_init()
 {
-    motor[0].init(0x208,1,1,100);
+    motor[0].init(0x208,1,185,150);
 }
 
 void Motor::init(uint16_t canid,float ratio,float max_angle,float min_angle)
@@ -93,6 +97,7 @@ void Motor::canRxMsgCallback(uint8_t rx_message[8])
     else delta_ecd_angle_=ecd_angle_-last_ecd_angle_+360;
     delta_angle_=delta_ecd_angle_*ratio_;
     store_angle_new();//保存电机输出端累计转过角度
+    angle_+=delta_angle_;
 }
 
 void Motor::store_angle_new(){

@@ -9,7 +9,7 @@ class PID
 {
 public:
     void init(float kp, float ki, float kd, float i_max_, float out_max_);
-    float calc(float ref,float fdb);
+    float pidcalc(float ref,float fdb);
 private:
     float kp_, ki_, kd_;
     float i_max, out_max;
