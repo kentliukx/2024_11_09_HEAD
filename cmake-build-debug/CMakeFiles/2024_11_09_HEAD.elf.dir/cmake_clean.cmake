@@ -59,6 +59,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj.d"
   "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
   "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d"
+  "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj"
+  "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj.d"
   "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj"
   "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj.d"
   "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj"

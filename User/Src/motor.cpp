@@ -2,13 +2,20 @@
 // Created by kentl on 24-11-9.
 //
 #include "../Inc/motor.h"
+#include "../Inc/PID.h"
 #include "can.h"
+#include "main.h"
+
 
 extern uint8_t CAN_rx_message[20], CAN_tx_message[20];
-extern CAN_RxHeaderTypeDef rx_header, tx_header;
+extern CAN_RxHeaderTypeDef rx_header;
+extern CAN_TxHeaderTypeDef tx_header;
 extern uint8_t num_of_motors;
+extern uint32_t sent_in_mailbox_num;
+extern uint16_t DBUS_message[6];
 
 Motor motor[1];
+extern PID motor_pid[1];
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)//中断回调
 {
@@ -30,12 +37,20 @@ void motor_handle()
 
 void motor_calc()
 {
-
+    int16_t temp;
+    temp=motor_pid[0].calc((float)(DBUS_message[0]-364)/1320,(float)(motor[0].angle_-motor[0].min_angle_)/(motor[0].max_angle_-motor[0].min_angle_));
+    CAN_tx_message[0]=temp>>8;
+    CAN_tx_message[1]=temp&0xff;
 }
 
 void motor_package_send()
 {
-
+    tx_header.StdId=0x1FE;
+    tx_header.IDE=CAN_ID_STD;
+    tx_header.RTR=CAN_RTR_DATA;
+    tx_header.DLC=8;
+    //此处发电流大小
+    HAL_CAN_AddTxMessage(&hcan1,&tx_header,CAN_tx_message, &sent_in_mailbox_num);
 }
 
 
@@ -49,10 +64,10 @@ void motor_package_send()
 
 void motor_init()
 {
-    motor[0].init(0x000,1,1,100);
+    motor[0].init(0x208,1,1,100);
 }
 
-void Motor::init(uint8_t canid,float ratio,float max_angle,float min_angle)
+void Motor::init(uint16_t canid,float ratio,float max_angle,float min_angle)
 {
     CANID=canid;
     ratio_=ratio;

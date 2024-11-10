@@ -5,7 +5,7 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include <sys/_stdint.h>
+#include <stdint.h>
 
 class Motor {
     float ratio_;// 电机减速比
@@ -24,14 +24,13 @@ class Motor {
     float max_angle_;
     float min_angle_;
 public:
-    uint8_t CANID;
+    uint16_t CANID;
     void canRxMsgCallback(uint8_t rx_data[8]);
     void store_angle_new();
-    void init(uint8_t canid,float ratio,float max_angle,float min_angle);
+    void init(uint16_t canid,float ratio,float max_angle,float min_angle);
+    friend void motor_calc();
 
 };
-
-void motor_init();
 
 void motor_handle();
 

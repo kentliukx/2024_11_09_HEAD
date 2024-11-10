@@ -808,6 +808,30 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 
+User/Src/PID.obj: User/Src/PID.cpp.obj
+.PHONY : User/Src/PID.obj
+
+# target to build an object file
+User/Src/PID.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj
+.PHONY : User/Src/PID.cpp.obj
+
+User/Src/PID.i: User/Src/PID.cpp.i
+.PHONY : User/Src/PID.i
+
+# target to preprocess a source file
+User/Src/PID.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.i
+.PHONY : User/Src/PID.cpp.i
+
+User/Src/PID.s: User/Src/PID.cpp.s
+.PHONY : User/Src/PID.s
+
+# target to generate assembly for a file
+User/Src/PID.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.s
+.PHONY : User/Src/PID.cpp.s
+
 User/Src/callback.obj: User/Src/callback.cpp.obj
 .PHONY : User/Src/callback.obj
 
@@ -974,6 +998,9 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s
+	@echo ... User/Src/PID.obj
+	@echo ... User/Src/PID.i
+	@echo ... User/Src/PID.s
 	@echo ... User/Src/callback.obj
 	@echo ... User/Src/callback.i
 	@echo ... User/Src/callback.s

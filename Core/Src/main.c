@@ -25,7 +25,7 @@
 #include "gpio.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../user/Inc/motor.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,6 +50,7 @@ uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20],num_of_motors;
 uint16_t DBUS_message[6];
 CAN_RxHeaderTypeDef rx_header;
 CAN_TxHeaderTypeDef tx_header;
+uint32_t sent_in_mailbox_num;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,6 +100,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim1);
   motor_init();
+  PID_init();
 
   CAN_FilterTypeDef FilterConfig={0,0,0,0,0,0,0,1,1,0};
   HAL_CAN_ConfigFilter(&hcan1,&FilterConfig);
