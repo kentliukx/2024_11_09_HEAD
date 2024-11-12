@@ -7,7 +7,8 @@ extern uint8_t num_of_motors;
 PID motor_pid[1];
 void PID_init()
 {
-    motor_pid[0].init(500,10,0,10,10000);
+    motor_pid[0].init(1400,1,22000,200,25000);//10度专用参数
+
 }
 
 
@@ -36,9 +37,13 @@ float PID::pidcalc(float ref, float fdb)
     else err_sum_+=err_;
     pout_=err_*kp_;
     iout_=err_sum_*ki_;
-    dout_=(err_-last_err_)*kd_;
-    if(pout_+dout_+iout_>out_max) output_=out_max;
-    else if(pout_+dout_+iout_<-out_max) output_=-out_max;
-    else output_=pout_+dout_+iout_;
+    err_d_=err_-last_err_;
+    dout_=err_d_*kd_;
+
+    fdf_=-24.89*fdb_+5544;
+
+    if(pout_+dout_+iout_+fdf_>out_max) output_=out_max;
+    else if(pout_+dout_+iout_+fdf_<-out_max) output_=-out_max;
+    else output_=pout_+dout_+iout_+fdf_;
     return output_;
 }

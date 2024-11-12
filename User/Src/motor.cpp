@@ -41,8 +41,8 @@ void motor_calc()
     float ref=((float)DBUS_message[0]-364)/1320*(motor[0].max_angle_-motor[0].min_angle_)+motor[0].min_angle_;
     float fdb=motor[0].angle_;
     tgt_current=motor_pid[0].pidcalc(ref,fdb);
-    CAN_tx_message[6]=tgt_current>>8;
-    CAN_tx_message[7]=tgt_current&0xff;
+    CAN_tx_message[0]=tgt_current>>8;
+    CAN_tx_message[1]=tgt_current&0xff;
 }
 
 void motor_package_send()
@@ -68,7 +68,7 @@ void motor_package_send()
 
 void motor_init()
 {
-    motor[0].init(0x208,1,185,150);
+    motor[0].init(0x205,1,245,205);
 }
 
 void Motor::init(uint16_t canid,float ratio,float max_angle,float min_angle)
