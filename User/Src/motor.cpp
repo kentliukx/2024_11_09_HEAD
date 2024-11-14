@@ -13,9 +13,10 @@ extern CAN_TxHeaderTypeDef tx_header;
 extern uint8_t num_of_motors;
 extern uint32_t sent_in_mailbox_num;
 extern uint16_t DBUS_message[6];
+extern int16_t tgt_speed;
 
 Motor motor[1];
-extern PID motor_pid[1];
+extern PID motor_pid[1],motor_pid_dual[1];
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)//中断回调
 {
@@ -38,9 +39,21 @@ void motor_handle()
 void motor_calc()
 {
     int16_t tgt_current;
-    float ref=((float)DBUS_message[0]-364)/1320*(motor[0].max_angle_-motor[0].min_angle_)+motor[0].min_angle_;
-    float fdb=motor[0].angle_;
-    tgt_current=motor_pid[0].pidcalc(ref,fdb);
+    float ref_position=((float)DBUS_message[0]-364)/1320*(motor[0].max_angle_-motor[0].min_angle_)+motor[0].min_angle_;
+    float fdb_position=motor[0].angle_;
+    float fdb_speed=motor[0].rotate_speed_;
+    float fdf_out=-24.89*fdb_position+5544;
+    float fdf_in=80*tgt_speed;
+
+    tgt_speed=motor_pid[0].pidcalc(ref_position,fdb_position);
+    tgt_current=motor_pid_dual[0].pidcalc(tgt_speed,fdb_speed);
+
+    tgt_current+=fdf_in;
+    tgt_current+=fdf_out;
+
+    if(tgt_current>25000) tgt_current=25000;
+    if(tgt_current<-25000) tgt_current=-25000;
+
     CAN_tx_message[0]=tgt_current>>8;
     CAN_tx_message[1]=tgt_current&0xff;
 }
@@ -89,7 +102,7 @@ void Motor::canRxMsgCallback(uint8_t rx_message[8])
     last_ecd_angle_=ecd_angle_;
 
     ecd_angle_=360.0/8191*(rx_message[0]*256+rx_message[1]);
-    rotate_speed_=rx_message[2]*256+rx_message[3];
+    rotate_speed_=(int16_t)(rx_message[2]*256+rx_message[3]);
     current_=rx_message[4]*256+rx_message[5];
     temp=rx_message[6];
 

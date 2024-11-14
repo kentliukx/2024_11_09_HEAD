@@ -52,6 +52,8 @@ uint16_t DBUS_message[6];
 CAN_RxHeaderTypeDef rx_header;
 CAN_TxHeaderTypeDef tx_header;
 uint32_t sent_in_mailbox_num;
+uint16_t ms=0;//距上一秒的毫秒数量
+int16_t tgt_speed=0,set_tgt_speed=100;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

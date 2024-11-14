@@ -17,7 +17,6 @@ private:
     float ref_, fdb_;
     float err_, err_sum_, last_err_,err_d_;
     float pout_, iout_, dout_;
-    float fdf_,kfdf_;
 };
 
 #endif //PID_H
