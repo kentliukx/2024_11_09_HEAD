@@ -4,8 +4,8 @@
 #include "dma.h"
 #include "usart.h"
 #include "../Inc/remotecontrol.h"
-extern uint8_t DBUS_rx_message[20];
-extern uint16_t DBUS_message[6];
+uint8_t DBUS_rx_message[20];
+uint16_t DBUS_message[6];
 
 void remotecontrol_callback()//中断回调
 {

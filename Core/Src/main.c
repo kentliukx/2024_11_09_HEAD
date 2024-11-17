@@ -20,13 +20,14 @@
 #include "main.h"
 #include "can.h"
 #include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "../../User/Inc/bmi088.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,13 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20],num_of_motors=2;
-uint16_t DBUS_message[6];
-CAN_RxHeaderTypeDef rx_header;
-CAN_TxHeaderTypeDef tx_header;
-uint32_t sent_in_mailbox_num;
-uint16_t ms=0;//距上一秒的毫秒数量
-int16_t tgt_speed_temp=0,set_tgt_speed_temp=30;
+extern uint8_t DBUS_rx_message[20];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -100,18 +95,20 @@ int main(void)
   MX_CAN1_Init();
   MX_TIM1_Init();
   MX_USART3_UART_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim1);
   motor_init();
   PID_init();
+  bmi088_init();
+  HAL_TIM_Base_Start_IT(&htim1);
 
   CAN_FilterTypeDef FilterConfig={0,0,0,0,0,0,0,1,1,0};
   HAL_CAN_ConfigFilter(&hcan1,&FilterConfig);
   HAL_CAN_Start(&hcan1);
-  HAL_CAN_ActivateNotification(&hcan1,CAN_IT_RX_FIFO0_MSG_PENDING);
+  HAL_CAN_ActivateNotification(&hcan1,CAN_IT_RX_FIFO0_MSG_PENDING);//receive motor messages
 
   __HAL_UART_ENABLE_IT(&huart3,UART_IT_IDLE);
-  HAL_UART_Receive_DMA(&huart3,DBUS_rx_message,20);
+  HAL_UART_Receive_DMA(&huart3,DBUS_rx_message,20);//receive dbus messages
   /* USER CODE END 2 */
 
   /* Infinite loop */

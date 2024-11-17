@@ -11,11 +11,11 @@
 #include "main.h"
 
 
-extern uint8_t CAN_rx_message[20], CAN_tx_message[20];
-extern CAN_RxHeaderTypeDef rx_header;
-extern CAN_TxHeaderTypeDef tx_header;
-extern uint8_t num_of_motors;
-extern uint32_t sent_in_mailbox_num;
+uint8_t CAN_rx_message[20],CAN_tx_message[20];
+CAN_RxHeaderTypeDef rx_header;
+CAN_TxHeaderTypeDef tx_header;
+uint8_t num_of_motors=2;
+uint32_t sent_in_mailbox_num;
 extern uint16_t DBUS_message[6];
 extern int16_t tgt_speed_temp;
 

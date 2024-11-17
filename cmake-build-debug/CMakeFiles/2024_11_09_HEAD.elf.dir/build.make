@@ -124,10 +124,24 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/main.c.s"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\main.c -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\main.c.s
 
+CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
+CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/spi.c
+CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\spi.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\spi.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\spi.c
+
+CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.i"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\spi.c > CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\spi.c.i
+
+CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.s"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\spi.c -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\spi.c.s
+
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/stm32f4xx_hal_msp.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/stm32f4xx_it.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\stm32f4xx_it.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\stm32f4xx_it.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\stm32f4xx_it.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/syscalls.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\syscalls.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\syscalls.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/sysmem.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\sysmem.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\sysmem.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/system_stm32f4xx.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\system_stm32f4xx.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\system_stm32f4xx.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\system_stm32f4xx.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/tim.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\tim.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\tim.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/tim.c.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Src/usart.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Src\usart.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Src\usart.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -224,7 +238,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Core/Startup/startup_stm32f407ighx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\2024_11_09_HEAD.elf.dir\Core\Startup\startup_stm32f407ighx.s.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Core\Startup\startup_stm32f407ighx.s
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Startup/startup_stm32f407ighx.s.i: cmake_force
@@ -238,7 +252,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Startup/startup_stm32f407ighx.s.s: cmake
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -252,7 +266,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i: cmake_force
@@ -266,7 +280,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -280,7 +294,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -294,7 +308,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -308,7 +322,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -322,7 +336,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -336,7 +350,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -350,7 +364,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -364,7 +378,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -378,7 +392,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -392,7 +406,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -406,7 +420,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -420,7 +434,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -431,10 +445,24 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.s
 
+CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
+CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+
+CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c > CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.i
+
+CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.s
+
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i: cmake_force
@@ -448,7 +476,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i: cmake_force
@@ -462,7 +490,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
@@ -476,7 +504,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ha
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/User/Src/PID.cpp
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\PID.cpp.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\PID.cpp.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\PID.cpp
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.i: cmake_force
@@ -487,10 +515,24 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.s"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\PID.cpp -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\PID.cpp.s
 
+CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
+CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/User/Src/bmi088.cpp
+CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\bmi088.cpp.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\bmi088.cpp.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\bmi088.cpp
+
+CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.i"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\bmi088.cpp > CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\bmi088.cpp.i
+
+CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.s"
+	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\bmi088.cpp -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\bmi088.cpp.s
+
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/User/Src/callback.cpp
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\callback.cpp.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\callback.cpp.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\callback.cpp
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.i: cmake_force
@@ -504,7 +546,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/User/Src/motor.cpp
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\motor.cpp.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\motor.cpp.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\motor.cpp
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.i: cmake_force
@@ -518,7 +560,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.s: cmake_force
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/flags.make
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj: D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/User/Src/remotecontrol.cpp
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj: CMakeFiles/2024_11_09_HEAD.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj"
 	C:\software\useful\STMicroelectronics\STM32Cube\STM32CubeCLT\GNU-tools-for-STM32\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj -MF CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\remotecontrol.cpp.obj.d -o CMakeFiles\2024_11_09_HEAD.elf.dir\User\Src\remotecontrol.cpp.obj -c D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\User\Src\remotecontrol.cpp
 
 CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.i: cmake_force
@@ -535,6 +577,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.s: cmake_force
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/dma.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/main.c.obj" \
+"CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj" \
@@ -557,10 +600,12 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.s: cmake_force
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" \
+"CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj" \
+"CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj" \
 "CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj"
@@ -572,6 +617,7 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.s: cmake_force
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/dma.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/gpio.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/main.c.obj
+2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/stm32f4xx_it.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/syscalls.c.obj
@@ -594,16 +640,18 @@ CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.s: cmake_force
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.obj
+2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/callback.cpp.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/motor.cpp.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/remotecontrol.cpp.obj
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/build.make
 2024_11_09_HEAD.elf: CMakeFiles/2024_11_09_HEAD.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable 2024_11_09_HEAD.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Data\SJTU\Robomaster\CLionProjects\2024_11_09_HEAD\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable 2024_11_09_HEAD.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\2024_11_09_HEAD.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/cmake-build-debug/2024_11_09_HEAD.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/Data/SJTU/Robomaster/CLionProjects/2024_11_09_HEAD/cmake-build-debug/2024_11_09_HEAD.bin"

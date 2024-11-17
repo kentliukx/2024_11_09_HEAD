@@ -224,6 +224,30 @@ Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
+Core/Src/spi.obj: Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.obj
+
+# target to build an object file
+Core/Src/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.c.obj
+
+Core/Src/spi.i: Core/Src/spi.c.i
+.PHONY : Core/Src/spi.i
+
+# target to preprocess a source file
+Core/Src/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.i
+.PHONY : Core/Src/spi.c.i
+
+Core/Src/spi.s: Core/Src/spi.c.s
+.PHONY : Core/Src/spi.s
+
+# target to generate assembly for a file
+Core/Src/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Core/Src/spi.c.s
+.PHONY : Core/Src/spi.c.s
+
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
 
@@ -736,6 +760,30 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
+
+# target to build an object file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
+
+# target to preprocess a source file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
+
+# target to generate assembly for a file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 
@@ -832,6 +880,30 @@ User/Src/PID.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/PID.cpp.s
 .PHONY : User/Src/PID.cpp.s
 
+User/Src/bmi088.obj: User/Src/bmi088.cpp.obj
+.PHONY : User/Src/bmi088.obj
+
+# target to build an object file
+User/Src/bmi088.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.obj
+.PHONY : User/Src/bmi088.cpp.obj
+
+User/Src/bmi088.i: User/Src/bmi088.cpp.i
+.PHONY : User/Src/bmi088.i
+
+# target to preprocess a source file
+User/Src/bmi088.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.i
+.PHONY : User/Src/bmi088.cpp.i
+
+User/Src/bmi088.s: User/Src/bmi088.cpp.s
+.PHONY : User/Src/bmi088.s
+
+# target to generate assembly for a file
+User/Src/bmi088.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_11_09_HEAD.elf.dir\build.make CMakeFiles/2024_11_09_HEAD.elf.dir/User/Src/bmi088.cpp.s
+.PHONY : User/Src/bmi088.cpp.s
+
 User/Src/callback.obj: User/Src/callback.cpp.obj
 .PHONY : User/Src/callback.obj
 
@@ -925,6 +997,9 @@ help:
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/spi.obj
+	@echo ... Core/Src/spi.i
+	@echo ... Core/Src/spi.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s
@@ -989,6 +1064,9 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s
@@ -1001,6 +1079,9 @@ help:
 	@echo ... User/Src/PID.obj
 	@echo ... User/Src/PID.i
 	@echo ... User/Src/PID.s
+	@echo ... User/Src/bmi088.obj
+	@echo ... User/Src/bmi088.i
+	@echo ... User/Src/bmi088.s
 	@echo ... User/Src/callback.obj
 	@echo ... User/Src/callback.i
 	@echo ... User/Src/callback.s
