@@ -47,13 +47,13 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20],num_of_motors=1;
+uint8_t DBUS_rx_message[20],CAN_rx_message[20],CAN_tx_message[20],num_of_motors=2;
 uint16_t DBUS_message[6];
 CAN_RxHeaderTypeDef rx_header;
 CAN_TxHeaderTypeDef tx_header;
 uint32_t sent_in_mailbox_num;
 uint16_t ms=0;//距上一秒的毫秒数量
-int16_t tgt_speed=0,set_tgt_speed=100;
+int16_t tgt_speed_temp=0,set_tgt_speed_temp=30;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

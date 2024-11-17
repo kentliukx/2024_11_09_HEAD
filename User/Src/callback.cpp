@@ -7,7 +7,7 @@
 #include "tim.h"
 
 extern uint16_t ms;
-extern int16_t tgt_speed,set_tgt_speed;
+extern int16_t tgt_speed_temp,set_tgt_speed_temp;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)//开始干活
 {
@@ -16,9 +16,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)//开始干活
         ms+=1;
         if(ms==1000) ms=0;//更新毫秒数
 
-        // if(ms%200<100) tgt_speed=set_tgt_speed;
-        // else tgt_speed=-set_tgt_speed;
-
+        if(ms%500<250) tgt_speed_temp=set_tgt_speed_temp;
+        else tgt_speed_temp=-set_tgt_speed_temp;//调速度环的函数
 
         motor_calc();
         motor_package_send();

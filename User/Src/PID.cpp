@@ -4,13 +4,15 @@
 #include "../Inc/PID.h"
 #include "main.h"
 extern uint8_t num_of_motors;
-PID motor_pid[1],motor_pid_dual[1];
+PID motor_pid_position[2],motor_pid_speed[2];
 void PID_init()
 {
-    //motor_pid[0].init(1400,1,22000,200,25000);//单环10度专用参数
-    motor_pid_dual[0].init(200,1,0,25,25000);//速度环
-    motor_pid[0].init(10,0.01,0,25,200);//位置环
-
+    //pitch settings
+    motor_pid_speed[0].init(200,1,0,25,25000);//速度环
+    motor_pid_position[0].init(10,0.01,0,25,500);//位置环
+    //yaw settings
+    motor_pid_speed[1].init(300,1,0,25,25000);//速度环
+    motor_pid_position[1].init(10,0.02,30,20,500);//位置环
 }
 
 

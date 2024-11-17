@@ -11,7 +11,7 @@ class Motor {
     float ratio_;// 电机减速比
     float angle_;
     struct {
-        int r;
+        int16_t r;
         float angle;
     } angle_new;
     float delta_angle_;// deg 输出端新转动的角度
