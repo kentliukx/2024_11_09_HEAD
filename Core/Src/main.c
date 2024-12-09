@@ -100,7 +100,6 @@ int main(void)
   motor_init();
   PID_init();
   bmi088_init();
-  HAL_TIM_Base_Start_IT(&htim1);
 
   CAN_FilterTypeDef FilterConfig={0,0,0,0,0,0,0,1,1,0};
   HAL_CAN_ConfigFilter(&hcan1,&FilterConfig);
@@ -109,6 +108,8 @@ int main(void)
 
   __HAL_UART_ENABLE_IT(&huart3,UART_IT_IDLE);
   HAL_UART_Receive_DMA(&huart3,DBUS_rx_message,20);//receive dbus messages
+
+  HAL_TIM_Base_Start_IT(&htim1);
   /* USER CODE END 2 */
 
   /* Infinite loop */

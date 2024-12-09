@@ -11,7 +11,7 @@ float x_gyro,y_gyro,z_gyro;
 uint8_t tx_data[2],rx_data[10];
 int16_t accel_range[4]={3,6,12,24}, gyro_range[5]={2000,1000,500,250,125};
 int16_t x_temp,y_temp,z_temp;
-const uint8_t accel_sel=1,gyro_sel=4;
+uint8_t accel_sel=0,gyro_sel=2;
 
 
 void bmi088_init()
@@ -67,9 +67,9 @@ void bmi088_read()
     HAL_SPI_Receive(&hspi1, rx_data, 7, 1000);
     HAL_GPIO_WritePin(CS1_Accel_GPIO_Port, CS1_Accel_Pin, GPIO_PIN_SET);
 
-    x_temp=rx_data[2]*256+rx_data[1];
-    y_temp=rx_data[4]*256+rx_data[3];
-    z_temp=rx_data[6]*256+rx_data[5];
+    x_temp=(rx_data[2]<<8)|rx_data[1];
+    y_temp=(rx_data[4]<<8)|rx_data[3];
+    z_temp=(rx_data[6]<<8)|rx_data[5];
     x_accel=(float)accel_range[accel_sel]*x_temp/32768;
     y_accel=(float)accel_range[accel_sel]*y_temp/32768;
     z_accel=(float)accel_range[accel_sel]*z_temp/32768;
@@ -77,12 +77,12 @@ void bmi088_read()
     tx_data[0]=0x02|0x80;
     HAL_GPIO_WritePin(CS1_Gyro_GPIO_Port, CS1_Gyro_Pin, GPIO_PIN_RESET);
     HAL_SPI_Transmit(&hspi1, tx_data, 1, 1000);
-    HAL_SPI_Receive(&hspi1, rx_data, 7, 1000);
+    HAL_SPI_Receive(&hspi1, rx_data, 6, 1000);
     HAL_GPIO_WritePin(CS1_Gyro_GPIO_Port, CS1_Gyro_Pin, GPIO_PIN_SET);
 
-    x_temp=rx_data[1]*256+rx_data[0];
-    y_temp=rx_data[3]*256+rx_data[2];
-    z_temp=rx_data[5]*256+rx_data[4];
+    x_temp=(rx_data[1]<<8)|rx_data[0];
+    y_temp=(rx_data[3]<<8)|rx_data[2];
+    z_temp=(rx_data[5]<<8)|rx_data[4];
     x_gyro=(float)gyro_range[gyro_sel]*x_temp/32768;
     y_gyro=(float)gyro_range[gyro_sel]*y_temp/32768;
     z_gyro=(float)gyro_range[gyro_sel]*z_temp/32768;

@@ -18,6 +18,7 @@ uint8_t num_of_motors=2;
 uint32_t sent_in_mailbox_num;
 extern uint16_t DBUS_message[6];
 extern int16_t tgt_speed_temp;
+extern float x_gyro,y_gyro,z_gyro;
 
 
 Motor motor[2];
@@ -49,7 +50,7 @@ void motor_calc()
     //pitch PID calc
     ref_position=((float)DBUS_message[1]-364)/1320*(motor[0].max_angle_-motor[0].min_angle_)+motor[0].min_angle_;
     fdb_position=motor[0].angle_;
-    fdb_speed=motor[0].rotate_speed_;
+    fdb_speed=y_gyro*60/360;
 
     tgt_speed=motor_pid_position[0].pidcalc(ref_position,fdb_position);
     tgt_current=motor_pid_speed[0].pidcalc(tgt_speed,fdb_speed);

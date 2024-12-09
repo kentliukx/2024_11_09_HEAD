@@ -11,8 +11,8 @@ void PID_init()
     motor_pid_speed[0].init(200,1,0,25,25000);//速度环
     motor_pid_position[0].init(10,0.01,0,25,500);//位置环
     //yaw settings
-    motor_pid_speed[1].init(300,1,0,25,25000);//速度环
-    motor_pid_position[1].init(10,0.02,30,20,500);//位置环
+    motor_pid_speed[1].init(200,1,0,25,25000);//速度环
+    motor_pid_position[1].init(10,0.02,20,20,500);//位置环
 }
 
 
